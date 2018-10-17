@@ -1,0 +1,14 @@
+
+- cal_id: domenico.moreschini@gmail.com
+  entities:
+  - device_id: domenicomoreschinigmailcom
+    ignore_availability: true
+    name: domenico.moreschini@gmail.com
+    track: false
+
+- cal_id: dg2g347otb30nop2irte2ld8mk@group.calendar.google.com
+  entities:
+  - device_id: casa
+    ignore_availability: true
+    name: Casa
+    track: true

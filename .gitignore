@@ -1,0 +1,9 @@
+secrets.yaml
+home-assistant*
+.cloud/
+.storage/
+deps/
+tts/
+.google.token
+.HA_VERSION
+.uuid

@@ -1,0 +1,29 @@
+- platform: darksky
+  api_key: !secret dark_sky_key
+  language: it
+  monitored_conditions:
+    - summary
+    - temperature
+    - apparent_temperature
+    - temperature_high
+    - temperature_low
+    - humidity
+    - precip_type
+    - precip_intensity
+    - precip_probability
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /home
+    - type: memory_free
+    - type: network_in
+      arg: 'wlan0'
+    - type: network_out
+      arg: 'wlan0'
+    - type: processor_use
+
+- platform: template
+  sensors:
+    event_title:
+      value_template: "{{ states.calendar.casa.attributes.message }}"
+      friendly_name: "Prossimo impegno"

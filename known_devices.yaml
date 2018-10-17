@@ -1,0 +1,8 @@
+
+domephone_r4:
+  hide_if_away: false
+  icon:
+  mac: !secret redmi4_mac
+  name: Dome
+  picture:
+  track: true

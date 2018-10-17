@@ -1,0 +1,20 @@
+- id: '1535398238177'
+  alias: Luci portico off
+  trigger:
+  - event: sunrise
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: group.luci_portico
+    service: light.turn_off
+- id: '1535754273564'
+  alias: Luci portico on
+  trigger:
+  - event: sunset
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: group.luci_portico
+    service: light.turn_on
