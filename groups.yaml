@@ -36,12 +36,13 @@ Gateway:
     - sensor.temperature_158d000222673c
     - sensor.humidity_158d00022279ea
     - sensor.temperature_158d00022279ea
+    - binary_sensor.switch_158d0001e7fe01
 
 Luci portico:
     name: Portico
     entities:
-    - light.yeelight_ct2_7c49ebadbcd4
-    - light.yeelight_ct2_7c49ebb36422
+    - light.front_door_one
+    - light.front_door_two
 
 Luce corridoio:
     name: Corridoio

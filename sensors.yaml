@@ -22,8 +22,8 @@
       arg: 'wlan0'
     - type: processor_use
 
-- platform: template
-  sensors:
-    event_title:
-      value_template: "{{ states.calendar.casa.attributes.message }}"
-      friendly_name: "Prossimo impegno"
+# - platform: template
+#   sensors:
+#     event_title:
+#       value_template: "{{ states.calendar.casa.attributes.message }}"
+#       friendly_name: "Prossimo impegno"

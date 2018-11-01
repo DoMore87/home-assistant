@@ -1,0 +1,6 @@
+- platform: yeelight
+  devices:
+    192.168.1.110:
+      name: Front Door One
+    192.168.1.111:
+      name: Front Door Two
