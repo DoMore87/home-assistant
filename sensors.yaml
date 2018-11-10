@@ -1,16 +1,3 @@
-- platform: darksky
-  api_key: !secret dark_sky_key
-  language: it
-  monitored_conditions:
-    - summary
-    - temperature
-    - apparent_temperature
-    - temperature_high
-    - temperature_low
-    - humidity
-    - precip_type
-    - precip_intensity
-    - precip_probability
 - platform: systemmonitor
   resources:
     - type: disk_use_percent

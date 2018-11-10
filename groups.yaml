@@ -7,24 +7,44 @@ System:
     - sensor.network_in_wlan0
     - sensor.network_out_wlan0
 
+Pulsanti:
+    name: Pulsanti
+    entities:
+    - binary_sensor.switch_158d0001e7fe01
+    - sensor.mijiaswitchone
+
 Media:
     name: Media
     entities:
     - media_player.home_mini_salotto
     - media_player.salottocasamoreschini
-    
-Meteo:
-    name: Meteo
+
+Camera:
+    name: Camera
     entities:
-    - sensor.dark_sky_summary
-    - sensor.dark_sky_temperature
-    - sensor.dark_sky_apparent_temperature
-    - sensor.dark_sky_daytime_high_temperature
-    - sensor.dark_sky_overnight_low_temperature
-    - sensor.dark_sky_humidity
-    - sensor.dark_sky_precip
-    - sensor.dark_sky_precip_intensity
-    - sensor.dark_sky_precip_probability
+    - sensor.humidity_158d0002226679
+    - sensor.temperature_158d0002226679
+    - light.comodino_dome
+
+Camera Luca:
+    name: Camera Luca
+    entities:
+    - sensor.humidity_158d000222673c
+    - sensor.temperature_158d000222673c
+
+Salotto:
+    name: Salotto
+    entities:
+    - sensor.umidita_salotto
+    - sensor.temperatura_salotto
+    - vacuum.xiaomi_vacuum_cleaner
+
+Corridoio:
+    name: Corridoio
+    entities:
+    - sensor.illumination_7811dce17bb2
+    - light.gateway_light_7811dce17bb2
+
 
 Gateway:
     name: Gateway
@@ -66,6 +86,7 @@ SystemView:
     view: yes
     entities:
     - group.system
+    - group.pulsanti
 
 LightsView:
     name: Luci
@@ -92,9 +113,10 @@ default_view:
     view: yes
     icon: mdi:home
     entities:
-    - group.meteo
-    - group.gateway
-    - sensor.event_title
+    - group.camera
+    - group.camera_luca
+    - group.corridoio
+    - group.salotto
     - calendar.casa
-    - vacuum.xiaomi_vacuum_cleaner
+    
     - device_tracker.domephone_r4
