@@ -34,8 +34,8 @@ Gateway:
     - sensor.temperature_158d0002226679
     - sensor.humidity_158d000222673c
     - sensor.temperature_158d000222673c
-    - sensor.humidity_158d00022279ea
-    - sensor.temperature_158d00022279ea
+    - sensor.umidita_salotto
+    - sensor.temperatura_salotto
     - binary_sensor.switch_158d0001e7fe01
 
 Luci portico:
@@ -50,7 +50,7 @@ Luce corridoio:
     - light.gateway_light_7811dce17bb2
 
 Luci camera:
-    name: Comodino Dome
+    name: Luci camera
     entities:
     - light.comodino_dome
 
