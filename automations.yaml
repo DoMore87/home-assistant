@@ -18,3 +18,29 @@
   - data:
       entity_id: group.luci_portico
     service: light.turn_on
+
+- id: '1541095845274'
+  alias: Luce corridoio
+  trigger:
+  - platform: mqtt
+    topic: zigbee2mqtt/0x00158d0001e824c9
+  condition:
+  - condition: template
+    value_template: "{{ 'single' == trigger.payload_json.click }}"
+  action:
+  - data:
+      entity_id: light.gateway_light_7811dce17bb2
+    service: light.toggle
+
+- id: '1541095845385'
+  alias: Luce comodino Dome
+  trigger:
+  - platform: mqtt
+    topic: zigbee2mqtt/0x00158d0001e824c9
+  condition:
+  - condition: template
+    value_template: "{{ 'double' == trigger.payload_json.click }}"
+  action:
+  - data:
+      entity_id: light.comodino_dome
+    service: light.toggle

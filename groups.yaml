@@ -49,6 +49,11 @@ Luce corridoio:
     entities:
     - light.gateway_light_7811dce17bb2
 
+Luci camera:
+    name: Comodino Dome
+    entities:
+    - light.comodino_dome
+
 Automazioni:
     name: Automazioni
     entities:
@@ -68,6 +73,7 @@ LightsView:
     entities:
     - group.luci_portico
     - group.luce_corridoio
+    - group.luci_camera
 
 MediaView:
     name: Media

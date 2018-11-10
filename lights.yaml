@@ -4,3 +4,15 @@
       name: Front Door One
     192.168.1.111:
       name: Front Door Two
+
+- platform: mqtt
+  name: "Comodino Dome"
+  state_topic: "stat/sonoff/POWER"
+  command_topic: "cmnd/sonoff/POWER"
+  availability_topic: "tele/sonoff/LWT"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: false
