@@ -22,15 +22,15 @@ Media:
 Camera:
     name: Camera
     entities:
-    - sensor.humidity_158d0002226679
-    - sensor.temperature_158d0002226679
+    - sensor.umidita_camera
+    - sensor.temperatura_camera
     - light.comodino_dome
 
 Camera Luca:
     name: Camera Luca
     entities:
-    - sensor.humidity_158d000222673c
-    - sensor.temperature_158d000222673c
+    - sensor.umidita_camera_luca
+    - sensor.temperatura_camera_luca
 
 Salotto:
     name: Salotto
@@ -44,19 +44,6 @@ Corridoio:
     entities:
     - sensor.illumination_7811dce17bb2
     - light.gateway_light_7811dce17bb2
-
-
-Gateway:
-    name: Gateway
-    entities:
-    - sensor.illumination_7811dce17bb2    
-    - sensor.humidity_158d0002226679
-    - sensor.temperature_158d0002226679
-    - sensor.humidity_158d000222673c
-    - sensor.temperature_158d000222673c
-    - sensor.umidita_salotto
-    - sensor.temperatura_salotto
-    - binary_sensor.switch_158d0001e7fe01
 
 Luci portico:
     name: Portico
@@ -118,5 +105,4 @@ default_view:
     - group.corridoio
     - group.salotto
     - calendar.casa
-    
     - device_tracker.domephone_r4

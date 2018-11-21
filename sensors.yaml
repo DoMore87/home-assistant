@@ -43,3 +43,47 @@
   json_attributes: 
     - "battery"
     - "voltage"
+
+- platform: "mqtt"
+  name: "Temperatura camera Luca"
+  state_topic: "zigbee2mqtt/0x00158d000222673c"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "°C"
+  icon: "mdi:temperature-celsius"
+  value_template: "{{ value_json.temperature }}"
+  json_attributes: 
+    - "battery"
+    - "voltage"
+
+- platform: "mqtt"
+  name: "Umidità camera Luca"
+  state_topic: "zigbee2mqtt/0x00158d000222673c"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "%"
+  icon: "mdi:water-percent"
+  value_template: "{{ value_json.humidity }}"
+  json_attributes: 
+    - "battery"
+    - "voltage"
+
+- platform: "mqtt"
+  name: "Temperatura camera"
+  state_topic: "zigbee2mqtt/0x00158d0002226679"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "°C"
+  icon: "mdi:temperature-celsius"
+  value_template: "{{ value_json.temperature }}"
+  json_attributes: 
+    - "battery"
+    - "voltage"
+
+- platform: "mqtt"
+  name: "Umidità camera"
+  state_topic: "zigbee2mqtt/0x00158d0002226679"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "%"
+  icon: "mdi:water-percent"
+  value_template: "{{ value_json.humidity }}"
+  json_attributes: 
+    - "battery"
+    - "voltage"    
