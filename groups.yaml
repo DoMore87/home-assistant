@@ -25,6 +25,7 @@ Camera:
     - sensor.umidita_camera
     - sensor.temperatura_camera
     - light.comodino_dome
+    - light.comodino_laura
 
 Camera Luca:
     name: Camera Luca
@@ -60,6 +61,7 @@ Luci camera:
     name: Luci camera
     entities:
     - light.comodino_dome
+    - light.comodino_laura
 
 Automazioni:
     name: Automazioni

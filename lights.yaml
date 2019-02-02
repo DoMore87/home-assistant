@@ -2,7 +2,7 @@
   devices:
     192.168.1.110:
       name: Front Door One
-    192.168.1.111:
+    192.168.1.112:
       name: Front Door Two
 
 - platform: mqtt
@@ -10,6 +10,18 @@
   state_topic: "stat/sonoffCameraDome/POWER"
   command_topic: "cmnd/sonoffCameraDome/POWER"
   availability_topic: "tele/sonoffCameraDome/LWT"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: false
+
+- platform: mqtt
+  name: "Comodino Laura"
+  state_topic: "stat/sonoffCameraLaura/POWER"
+  command_topic: "cmnd/sonoffCameraLaura/POWER"
+  availability_topic: "tele/sonoffCameraLaura/LWT"
   qos: 1
   payload_on: "ON"
   payload_off: "OFF"
